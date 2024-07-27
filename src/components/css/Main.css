@@ -28,6 +28,14 @@ body{
     place-items: center;
 }
 
+#titleContainer{
+    font-family: monospace;
+    font-size: 180%;
+    color: var(--Verydarkcyan);
+    opacity: .5;
+    text-shadow: #0000009a 2.5px 2.5px 2px;
+}
+
 #MainAppContainer{
     display: flex;
     justify-content: center;

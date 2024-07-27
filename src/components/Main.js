@@ -82,6 +82,14 @@ export default function Main() {
   return (
     <>
     <div id='Grided'>
+        <div id='titleContainer'>
+            <div className='title'>
+                SPLI
+            </div>
+            <div className='title'>
+                TTER
+            </div>
+        </div>
         <div id='MainAppContainer'>
             <div id='SidesContainer'>
                 <div id='LeftSided'>
