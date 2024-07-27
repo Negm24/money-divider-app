@@ -125,13 +125,13 @@ export default function Main() {
 
                         <div className='results'>
                             {inputValues.map((value, index) => (
-                                <div className='individualResults'>            
+                                <div className='individualResults'>          
                                     <div className='individualDetails'>
                                         <div class="checkbox-wrapper-15">
                                             <input className="inp-cbx" id={`cbx-${index}`} type="checkbox" style={{display: "none"}} onChange={(e) => handleCheckboxChange(index, e.target.value)} value={value.checked} />
                                             <label className="cbx" htmlFor={`cbx-${index}`}>
                                                 <span>
-                                                    <svg width="12px" height="9px" viewbox="0 0 12 9">
+                                                    <svg width="12px" height="10px" viewBox="0 0 24 18">
                                                         <polyline points="1 5 4 8 11 1"></polyline>
                                                     </svg>
                                                 </span>
