@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --primaryTheme-strongCyan: hsl(172, 67%, 45%);
+
+    /* Neutral */
+    --Verydarkcyan: hsl(183, 100%, 15%);
+    --Darkgrayishcyan: hsl(186, 14%, 43%);
+    --Grayishcyan: hsl(184, 14%, 56%);
+    --Lightgrayishcyan: hsl(185, 41%, 84%);
+    --Verylightgrayishcyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+
+    /* Font */
+    --family: monospace;
+    --inputFontSize: 24px;
+    --weight: 700;
+}
+
+body{
+    background-color: var(--Lightgrayishcyan);
+    font-family: monospace;
+    font-weight: 800;
+}
+
+#Grided{
+    display: grid;
+    place-items: center;
+}
+
+#MainAppContainer{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+#SidesContainer{
+    display: flex;
+    margin: 5% 0;
+    justify-content: center;
+    background-color: var(--White);
+    border-radius: 1rem;
+    width: 100%;
+}
+
+
+
+#LeftSided{
+    margin: 5%;
+    width: 40%;
+}
+
+#inputNumberOfPeople button{
+    margin: 5% 0;
+    width: 100%;
+    background-color: var(--primaryTheme-strongCyan);
+    border: none;
+    transition: all ease 200ms;
+}
+
+#InputsAdded .individualInputs{
+    margin: 10% 0;
+}
+
+#InputsAdded .individualInputs div{
+    margin-top: 3%;
+}
+
+#InputsAdded .individualInputs h3{
+    font-size: 180%;
+    color: #686f72;
+}
+
+.input-wrapper{
+    position: relative;
+}
+
+.input-wrapper input[type="number"]{
+
+}
+
+.placeholder {
+    position: absolute;
+    right: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999; /* Placeholder text color */
+    pointer-events: none; /* Ensure the placeholder doesn't interfere with input */
+}
+
+.input-wrapper input[type="text"]:focus + .placeholder {
+    display: none; /* Hide the placeholder when input field is focused */
+  }
+
+input{
+    width: 100%;
+    border-radius: 0.375rem;
+    border: none;
+    background-color: #f3f8fb;
+    height: 50px;
+    color: var(--Verydarkcyan);
+    font-size: 1.5rem;
+}
+
+input:focus{
+    outline: 3px var(--primaryTheme-strongCyan) solid;
+}
+
+input::placeholder{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+legend, label{
+    color: #686f72;
+    opacity: .8;
+}
+
+#InputsAdded{
+    display: flex;
+    flex-direction: column;
+}
+
+#VATContainer{
+    margin-top: 10%;
+}
+
+
+/* .........................Sides..................... */
+
+#RightSided{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5%;
+    width: 49%;
+    background-color: var(--Verydarkcyan);
+    border-radius: 1rem;
+    height: 65%;
+}
+
+#RightSided .RightSidedResultsContainer{
+    margin: 2%;
+}
+
+#RightSided #ResultText{
+    color: var(--White);
+    font-size: 200%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#RightSided .results{
+    margin: 0 0;
+}
+
+#RightSided .individualResults{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#RightSided .individualDetails{
+    margin: 10% 0;
+    color: var(--White);
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+}
+
+.indDetAfterChecked{
+    opacity: .3;
+}
+
+#RightSided .individualDetails input{
+    width: 20px;
+    height: 20px;
+}
+
+#RightSided .individualDetails:last-child{
+    color: var(--primaryTheme-strongCyan);
+    font-size: 250%;
+}
+
+#RightSided .rightSidedTotalPrice{
+    text-align: center;
+}
+
+#RightSided .rightSidedTotalPrice h1{
+    color: var(--Verylightgrayishcyan);
+}
+
+#RightSided .rightSidedTotalPrice span{
+    font-size: 280%;
+    color: var(--primaryTheme-strongCyan);
+}
+
+#RightSided .RightSidedResultsContainer button{
+    width: 100%;
+    background-color: var(--primaryTheme-strongCyan);
+    border: none;
+    transition: all ease 200ms;
+}
+button:hover{
+    background-color: var(--Verylightgrayishcyan);
+    color: var(--Verydarkcyan);
+}
+button:active{
+    margin: 0 auto;
+    transform: scale(0.95);
+    transition: all ease 200ms;
+}
+
+/* ..........................................checkbox css............................................... */
+
+.checkbox-wrapper-15 .cbx {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer; 
+}
+.checkbox-wrapper-15 .cbx span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+}
+.checkbox-wrapper-15 .cbx span:first-child {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transform: scale(1);
+    vertical-align: middle;
+    border: 1px solid #B9B8C3;
+    transition: all 0.2s ease;
+}
+.checkbox-wrapper-15 .cbx span:first-child svg {
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    left: 6px;
+    fill: none;
+    stroke: white;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+}
+.checkbox-wrapper-15 .cbx span:first-child:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--primaryTheme-strongCyan);
+    display: block;
+    transform: scale(0);
+    opacity: 1;
+    border-radius: 50%;
+    transition-delay: 0.2s;
+}
+.checkbox-wrapper-15 .cbx span:last-child {
+    margin-left: 8px;
+    color: var(--White);
+    transition: color 800ms ease;
+}
+.checkbox-wrapper-15 .cbx span:last-child:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: var(--primaryTheme-strongCyan);
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    transition: transform ease 600ms;
+}
+.checkbox-wrapper-15 .cbx:hover span:first-child {
+    border-color: var(--primaryTheme-strongCyan);
+}
+
+.checkbox-wrapper-15 .inp-cbx:checked + .cbx span:first-child {
+    border-color: var(--primaryTheme-strongCyan);
+    background: var(--primaryTheme-strongCyan);
+    animation: check-15 0.6s ease;
+}
+.checkbox-wrapper-15 .inp-cbx:checked + .cbx span:first-child svg {
+    stroke-dashoffset: 0;
+}
+.checkbox-wrapper-15 .inp-cbx:checked + .cbx span:first-child:before {
+    transform: scale(2.2);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+.checkbox-wrapper-15 .inp-cbx:checked + .cbx span:last-child {
+    color: #B9B8C3;
+    transition: all 0.3s ease;
+}
+.checkbox-wrapper-15 .inp-cbx:checked + .cbx span:last-child:after {
+    transform: scaleX(1);
+    transition: all 0.3s ease;
+}
+
+@keyframes check-15 {
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+
+
+
+
+
+
+
+.Fade-enter {
+    opacity: 0;
+    transition: all 300ms ease-in;
+}
+
+.Fade-enter-active {
+    opacity: 1;
+}
+
+.Fade-exit {
+    opacity: 1;
+    transition: all 300ms ease-out;
+}
+
+.Fade-exit-active {
+    opacity: 0;
+}
