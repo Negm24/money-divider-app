@@ -332,12 +332,8 @@ button:active{
         width: 85%;
     }
 
-    .cbx{
-        font-size: 90%;
-    }
-
     .individualResults{
-        font-size: 70%;
+        font-size: 60%;
     }
 }
 
