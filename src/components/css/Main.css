@@ -34,6 +34,7 @@ body{
     color: var(--Verydarkcyan);
     opacity: .5;
     text-shadow: #0000009a 2.5px 2.5px 2px;
+    padding: 3% 0 0 0;
 }
 
 #MainAppContainer{
