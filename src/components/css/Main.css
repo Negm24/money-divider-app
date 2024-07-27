@@ -325,7 +325,7 @@ button:active{
     }
 
     #RightSided{
-        width: 85%;
+        width: 92%;
     }
 
     #LeftSided{
@@ -333,7 +333,18 @@ button:active{
     }
 
     .individualResults{
-        font-size: 60%;
+        font-size: 55%;
+    }
+
+    .checkbox-wrapper-15 .cbx span:first-child {
+        position: relative;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        transform: scale(1);
+        vertical-align: middle;
+        border: 1px solid #B9B8C3;
+        transition: all 0.2s ease;
     }
 }
 
