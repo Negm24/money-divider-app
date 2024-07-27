@@ -127,10 +127,6 @@ export default function Main() {
                             {inputValues.map((value, index) => (
                                 <div className='individualResults'>            
                                     <div className='individualDetails'>
-                                        {/* <input type='checkbox' /> */}
-                                        
-
-
                                         <div class="checkbox-wrapper-15">
                                             <input className="inp-cbx" id={`cbx-${index}`} type="checkbox" style={{display: "none"}} onChange={(e) => handleCheckboxChange(index, e.target.value)} value={value.checked} />
                                             <label className="cbx" htmlFor={`cbx-${index}`}>

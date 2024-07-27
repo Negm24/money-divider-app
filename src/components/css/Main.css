@@ -314,6 +314,33 @@ button:active{
 
 
 
+@media only screen and (max-width: 530px) {
+    #MainAppContainer{
+        width: 90%;
+    }
+    #SidesContainer{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #RightSided{
+        width: 85%;
+    }
+
+    #LeftSided{
+        width: 85%;
+    }
+
+    .cbx{
+        font-size: 90%;
+    }
+
+    .individualResults{
+        font-size: 70%;
+    }
+}
+
 
 
 
