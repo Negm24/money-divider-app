@@ -4,12 +4,23 @@
 // All Classes MUST have first small letter, but Capitalized after each word.
 
 // .....................................End of Rules..........................................
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Fade } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/Main.css';
+import { BrowserRouter as Router, Route, Switch, useLocation } from 'react-router-dom';
+import ReactGA from 'react-ga';
+
+function usePageViews() {
+    const location = useLocation();
+    useEffect(() => {
+      ReactGA.pageview(location.pathname + location.search);
+    }, [location]);
+  }
 
 export default function Main() {
+
+    usePageViews();
 
     // const userScreenHeight = window.innerHeight;
     // const userScreenWidth = window.innerWidth;
