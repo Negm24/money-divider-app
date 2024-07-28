@@ -11,16 +11,16 @@ import './css/Main.css';
 import { BrowserRouter as Router, Route, Switch, useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga';
 
-function usePageViews() {
-    const location = useLocation();
-    useEffect(() => {
-      ReactGA.pageview(location.pathname + location.search);
-    }, [location]);
-  }
+// function usePageViews() {
+//     const location = useLocation();
+//     useEffect(() => {
+//       ReactGA.pageview(location.pathname + location.search);
+//     }, [location]);
+//   }
 
 export default function Main() {
 
-    usePageViews();
+    // usePageViews();
 
     // const userScreenHeight = window.innerHeight;
     // const userScreenWidth = window.innerWidth;
