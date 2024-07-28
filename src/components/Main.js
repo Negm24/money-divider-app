@@ -132,7 +132,6 @@ export default function Main() {
                         <div className='input-wrapper'>
                             <input type='number' value={VATValue} onChange={handleVAT} />
                         </div>
-                        <div className='placeholder' id='placeholder'>EGP</div>
                     </div>
                 </div>
 

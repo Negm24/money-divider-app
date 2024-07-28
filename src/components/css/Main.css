@@ -84,23 +84,6 @@ body{
     position: relative;
 }
 
-.input-wrapper input[type="number"]{
-
-}
-
-.placeholder {
-    position: absolute;
-    right: 10px; /* Adjust as needed */
-    top: 50%;
-    transform: translateY(-50%);
-    color: #999; /* Placeholder text color */
-    pointer-events: none; /* Ensure the placeholder doesn't interfere with input */
-}
-
-.input-wrapper input[type="text"]:focus + .placeholder {
-    display: none; /* Hide the placeholder when input field is focused */
-  }
-
 input{
     width: 100%;
     border-radius: 0.375rem;
