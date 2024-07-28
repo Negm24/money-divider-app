@@ -344,8 +344,8 @@ button:active{
 
     .checkbox-wrapper-15 .cbx span:first-child {
         position: relative;
-        width: 10px;
-        height: 10px;
+        width: 13px;
+        height: 13px;
         border-radius: 50%;
         transform: scale(1);
         vertical-align: middle;

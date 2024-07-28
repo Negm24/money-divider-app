@@ -150,7 +150,7 @@ export default function Main() {
                                             <input className="inp-cbx" id={`cbx-${index}`} type="checkbox" style={{display: "none"}} onChange={(e) => handleCheckboxChange(index, e.target.value)} value={value.checked} />
                                             <label className="cbx" htmlFor={`cbx-${index}`}>
                                                 <span>
-                                                    <svg width="12px" height="10px" viewBox="0 0 24 18">
+                                                    <svg width="13px" height="11px" viewBox="0 0 24 18">
                                                         <polyline points="1 5 4 8 11 1"></polyline>
                                                     </svg>
                                                 </span>
