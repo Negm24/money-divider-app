@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/money-divider-app/static/css/main.7b7cccc3.css",
-    "main.js": "/money-divider-app/static/js/main.8f2a1b4f.js",
+    "main.js": "/money-divider-app/static/js/main.84062f62.js",
     "static/js/453.c25aa17b.chunk.js": "/money-divider-app/static/js/453.c25aa17b.chunk.js",
     "index.html": "/money-divider-app/index.html",
     "main.7b7cccc3.css.map": "/money-divider-app/static/css/main.7b7cccc3.css.map",
-    "main.8f2a1b4f.js.map": "/money-divider-app/static/js/main.8f2a1b4f.js.map",
+    "main.84062f62.js.map": "/money-divider-app/static/js/main.84062f62.js.map",
     "453.c25aa17b.chunk.js.map": "/money-divider-app/static/js/453.c25aa17b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7b7cccc3.css",
-    "static/js/main.8f2a1b4f.js"
+    "static/js/main.84062f62.js"
   ]
 }
